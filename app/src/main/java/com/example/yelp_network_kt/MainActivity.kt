@@ -49,10 +49,10 @@ class MainActivity : AppCompatActivity() {
                     response: Response<YelpSearchResult>
                 ) {
                     //Log.i(TAG, "onResponse $response")
-                    val body = response.body()
-                    if (body == null) "No data"
-                    else restaurants.addAll(body.allRestaurants)
-                    adapter.notifyDataSetChanged()
+//                    val body = response.body()
+//                    if (body == null) "No data"
+//                    else restaurants.addAll(body.allRestaurants)
+//                    adapter.notifyDataSetChanged()
 
                     /** 9. Check response and add all lists */
                     if (body != null) {
